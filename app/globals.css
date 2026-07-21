@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0b;
+  color: #f5f5f7;
+}
+
+/* Reusable glassmorphism card surface used across sections */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-hover {
+  transition: border-color 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+
+.glass-hover:hover {
+  border-color: rgba(255, 20, 64, 0.4);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-4px);
+}
+
+/* Gradient text used for headline emphasis */
+.text-gradient {
+  background: linear-gradient(135deg, #ff1440 0%, #ff7a45 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Slim custom scrollbar to match the dark theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2e;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff1440;
+}
+
+/* Respect reduced-motion preferences across the page */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Visible keyboard focus ring for accessibility */
+:focus-visible {
+  outline: 2px solid #ff1440;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
