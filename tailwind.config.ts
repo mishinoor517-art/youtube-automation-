@@ -13,14 +13,14 @@ const config: Config = {
         surface: "#121214",
         "surface-light": "#1A1A1D",
         border: "rgba(255,255,255,0.08)",
-        // YouTube-inspired red, pushed slightly toward magenta for a more premium feel
+        // Electric violet — premium "AI intelligence" primary
         primary: {
-          DEFAULT: "#FF1440",
-          dark: "#C4102F",
-          light: "#FF4D6D",
+          DEFAULT: "#8B5CF6",
+          dark: "#6D28D9",
+          light: "#A78BFA",
         },
-        // Warm ember accent — pairs with primary in gradients, evokes "rendering/upload" energy
-        ember: "#FF7A45",
+        // Cyan accent — pairs with primary in gradients, evokes "video/tech" energy
+        ember: "#22D3EE",
         ink: "#F5F5F7",
         muted: "#9A9AA3",
       },
@@ -30,8 +30,8 @@ const config: Config = {
       },
       backgroundImage: {
         "grain-fade":
-          "radial-gradient(120% 120% at 50% 0%, rgba(255,20,64,0.16) 0%, rgba(10,10,11,0) 60%)",
-        "glow-red": "linear-gradient(135deg, #FF1440 0%, #FF7A45 100%)",
+          "radial-gradient(120% 120% at 50% 0%, rgba(139,92,246,0.18) 0%, rgba(10,10,11,0) 60%)",
+        "glow-red": "linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%)",
       },
       keyframes: {
         float: {
